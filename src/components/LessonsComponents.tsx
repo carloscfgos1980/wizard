@@ -17,8 +17,15 @@ const LessonsComponents = () => {
                     return (
                         <div key={index}>
                             <div className="text-start pe-4">
-                                <p>Title: {less.title}</p>
-                                <p>description: {less.description}</p>
+                                <div className="d-flex">
+                                    <p className="me-2"><strong>Title:</strong></p>
+                                    <p> {less.title}</p>
+                                </div>
+                                <div className="d-flex">
+                                    <p className="me-2"><strong>Description:</strong></p>
+                                    <p>{less.description}</p>
+                                </div>
+                                
                             </div>
                             <div className="row">
                                 <div className="col-10 col-sm-5">

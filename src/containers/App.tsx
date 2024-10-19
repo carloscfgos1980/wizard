@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useAppDispatch, useAppSelector } from '../redux/configureStore';
+import { useAppDispatch } from '../redux/configureStore';
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -8,8 +8,6 @@ import {
 } from "react-router-dom";
 import './App.css';
 import { getCoursesAsync } from '../redux/filteredCourses';
-import CoursesComoponent from '../components/CoursesComoponent';
-
 import RootLayout from '../pages/RootLayout';
 import Courses from '../pages/Courses';
 import Modules from '../pages/Modules';
@@ -34,10 +32,7 @@ function App() {
 
   return (
     <div className="App">
-      {/* <h1>App</h1> */}
       <RouterProvider router={router} />
-      {/* <CoursesComoponent/> */}
-
     </div>
   );
 }

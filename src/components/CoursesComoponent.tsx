@@ -37,7 +37,6 @@ const CoursesComoponent = () => {
                             )
                         })}
                     </ol>}
-
                 </div>
                 <div className="details col-sm-4">
                     <h1>Details</h1>
