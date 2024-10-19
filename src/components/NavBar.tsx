@@ -13,7 +13,6 @@ const NavBar = () => {
       <NavLink to="/lessons">
         <button className="btn btn-secondary mx-1">Lessons</button>
       </NavLink>
-
     </nav>
   );
 }

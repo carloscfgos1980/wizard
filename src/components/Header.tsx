@@ -4,9 +4,11 @@ import NavBar from "./NavBar";
 
 const Header = () => {
     return (
-        <div>
-            <h1>Header</h1>
-            <NavBar/>
+        <div className="container-fluid py-5">
+            <div className="w-75">
+                <h1>Wizard app</h1>
+                <NavBar/>
+            </div>
         </div>
     )
 }

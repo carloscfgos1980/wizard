@@ -1,7 +1,10 @@
+import LessonsComponents from "../components/LessonsComponents"
+
 const Lessons = () => {
     return (
-        <div>
+        <div className="container-lg py-3">
             <h1>lessons</h1>
+            <LessonsComponents/>
         </div>
     )
 }

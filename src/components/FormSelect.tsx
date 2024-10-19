@@ -2,7 +2,6 @@
 
 
 const FormSelect = ({items, getTitle}:any) => {
-    console.log('items',items)
     return (
     <select
       className="form-select"

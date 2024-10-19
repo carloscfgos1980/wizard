@@ -53,20 +53,6 @@ export const getCoursesAsync = createAsyncThunk(
   fetchCourses,
 );
 
-// const saveFeed = async (feed: Feed) => {
-//   try {
-//     const response = await axios.post(URL_FEEDBACKS, feed);
-//     console.log(response);
-//   } catch (error) {
-//     console.log(error);
-//   }
-// };
-
-// export const saveFeedBacksAsync = createAsyncThunk(
-//   "feeds/saveFeedBacksAsync",
-//   saveFeed,
-// );
-
 const initialState: CoursesState = {
   courses: [],
   lessons:[],
@@ -107,9 +93,6 @@ export const filteredCoursesSlice = createSlice({
         state.loading = false;
       },
     );
-    // builder.addCase(saveFeedBacksAsync.fulfilled, (state) => {
-    //   state.postSuccessful = true;
-    // });
   },
 });
 
