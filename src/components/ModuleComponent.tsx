@@ -37,14 +37,14 @@ const ModuleComponent = () => {
             <div className="py-5">
                 {selectedModule && selectedModule.lessons.map((less:any, index:number) => {
                     return (
-                        <div key={index} className="col-6 pe-5 text-start">
-                            <h3 style={{backgroundColor: color(less.title)}} role="button" onClick={() => getLessonTitle(less.title)}>lesson: {less.title}</h3>
+                        <div key={index} className="col-sm-6 pe-5 text-start">
+                            <h5 style={{backgroundColor: color(less.title)}} role="button" onClick={() => getLessonTitle(less.title)}>lesson: {less.title}</h5>
                         </div>
                     )
                 })}
             </div>
             <div className="row justify-content-start" >
-                <div className="col-5">
+                <div className="col-sm-5">
                     <p>⬆️</p>               
                     <p className="bg-warning " >Choose the lesson and then the lessons button for details</p>
 
